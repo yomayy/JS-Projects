@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример - ротатор изображений</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+    <nav>
+        <button id="menu">
+            <img src="../img/menu.ico" width="24">
+        </button>
+    </nav>
+    <main>
+        <aside>
+            <h4>РОТАТОР ИЗОБРАЖЕНИЙЙЙ</h4>
+            <hr>
+            <ul>
+                <li><a href="pages/accordion.html">Accordion</a></li>
+                <li><a href="pages/autocomplete.html">Autocomplete</a></li>
+                <li><a href="pages/calendar.html">Calendar</a></li>
+                <li><a href="pages/effects.html">Effects</a></li>
+                <li><a href="pages/progressbar.html">ProgressBar</a></li>
+                <li><a href="pages/rotator.html">Rotator</a></li>
+                <li><a href="pages/slider.html">Slider</a></li>
+                <li><a href="pages/sortedlist.html">SortedList</a></li>
+                <li><a href="pages/tabpanels.html">TabPanels</a></li>
+            </ul>
+        </aside>
+        <section id="main_box">
+            <h1 style="color: brown">Ротатор</h1>
+        </section>
+        <article>
+            <div id="slide_box">
+                <img id="p1" src="../img/p1.jpg" class="slide">
+                <img id="p2" src="../img/p2.jpg" class="slide">
+                <img id="p3" src="../img/p3.jpg" class="slide">    
+                <img id="p4" src="../img/p4.jpeg" class="slide">    
+            </div>
+            <div id="btns">
+                <div id="help_btns" hidden="true">
+                    <p style="margin: 0 auto">Задайте интервал</p>
+                    <p style="margin: 0 auto">(десятая часть секунды)</p>
+                    <input type="number" id="interval" min="1" value="1">
+                    <p style="margin: 0 auto">Куда?</p>
+                    <button class="btns" id="h_left">←</button>
+                    <button class="btns" id="h_right">→</button>
+                </div>
+                <button class="btns" id="left">Left</button>
+                <button class="btns" id="right">Right</button>
+                <button class="btns" id="start">Start</button>
+                <button class="btns" id="stop">Stop</button>
+            </div>  
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <h4>Copyright &copy; Здарова, это Макс!</h4>
+    </footer>
+</body>
+</html>
